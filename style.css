@@ -1,0 +1,137 @@
+:root{
+    --sm: 16px;
+    --md: 20px;
+    --lg: 28px;
+    --white: white;
+    --border: 1px solid black;
+    --grey: #495057;
+    --green:rgb(66, 184, 111);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    background-image: linear-gradient(rgba(221, 174, 44,0.5),rgba(0, 71, 143, 0.5),rgba(168, 0, 0,0.5)),url(https://cdn2.hometogo.net/assets/media/pics/1200_628/6118a69ddd850.jpg);
+    background-size: cover;
+    min-width: 270px;
+}
+
+.pagina{
+    display: grid;
+    place-content: center;
+    margin-top: 50px;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.contenedor{
+    width: 550px;
+}
+
+.contenedor div:first-child,form div{
+    display: flex;
+    flex-direction: column;
+}
+
+.cabeza{
+    margin-bottom: 20px ;
+    display: flex;
+    
+}
+
+.title{
+    display: flex;
+    font-size: var(--lg);
+    font-weight: bold;
+    justify-content: center;
+}
+
+.description{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: var(--md);
+    font-style: italic;
+    text-align: center;
+    padding: 0 50px;
+}
+
+#survey-form{
+    padding: 30px;
+    background-color: rgba(88, 85, 85, 0.685);
+    border-radius: 10px;
+    color: var(--white);
+    margin-bottom: 50px;
+}
+#survey-form div{
+    margin-bottom: 16px;
+}
+#survey-form div label{
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: var(--sm);
+    text-transform: capitalize;
+
+}
+#survey-form div input{
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: var(--sm);
+    
+}
+
+#dropdown{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: var(--sm);
+    color: var(--grey);
+}
+
+#survey-form div:nth-child(5) input,#survey-form div:nth-child(6) input{
+   margin-right: 10px;
+   width: 15px;
+   height: 15px;
+}
+
+#survey-form div:nth-child(7) textarea{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#survey-form div:nth-child(8) input {
+    background-color: var(--green);
+    color: var(--white);
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: var(--sm);
+    cursor: pointer;
+}
+@media (max-width: 630px) {
+
+    .contenedor{
+        width: 80%;
+        margin: auto;
+    }
+
+    .cabeza{
+        text-align: center;
+    }
+
+    .description{
+        padding: 0;
+    }
+}
+
+@media (max-width: 384px) {
+    :root{
+        --sm: 12px;
+        --md: 16px;
+        --lg: 24px;
+    }
+}

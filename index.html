@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Quicksand:wght@300;500;700&family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="pagina">
+    <div class="contenedor">
+      <div class="cabeza">
+        <h1 id="title" class="title">Formulario acerca de Colombia</h1>
+        <p id="description" class="description">
+          Conoceremos tus experiencias en colombia por medio de este formulario.
+        </p>
+      </div>
+      <form action="end.html" id="survey-form">
+        <div>
+          <label for="name" id="name-label">Nombre</label>
+          <input type="text" name="name" id="name" placeholder="Nombre" required>
+        </div >
+
+        <div>
+          <label for="email" id="email-label">Correo</label>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+
+        <div>
+          <label for="number" id="number-label">Edad</label>
+          <input type="number" name="number" id="number" min="1" max="100" placeholder="numero">
+        </div>
+
+        <div>
+          <label for="dropdown">¿De Donde Eres? </label>
+          <select name="lista" id="dropdown">
+            <option value="" selected disabled>Seleccionar Ciudad</option>
+            <option value="Bogota">Bogota</option>
+            <option value="Medellin">Medellin</option>
+            <option value="Cali">Cali</option>
+            <option value="Cartagena">Cartagena</option>
+          </select>
+        </div>
+
+        <div class="radio">
+          <label for="#">¿Te gusta donde vives?</label>
+          <label for="respuesta">
+            <input type="radio" name="attribute" id="respuesta" value="si">si
+          </label>
+          <label for="respuesta">
+            <input type="radio" name="attribute" id="respuesta" value="no">no
+          </label>
+          <label for="respuesta">
+            <input type="radio" name="attribute" id="respuesta" value="nose">no se
+          </label>
+        </div>
+
+        <div>
+          <label for="#">¿que ciudades has visitado?</label >
+          <label for="">
+            <input type="checkbox" name="respuesta" id="" value="Bogota">Bogota
+          </label>
+            <label for="">
+              <input type="checkbox" name="respuesta" id="" value="Medellin">Medellin
+          </label>
+          <label for="">
+            <input type="checkbox" name="respuesta" id="" value="Cali">Cali
+          </label>
+          <label for="">
+            <input type="checkbox" name="respuesta" id="" value="Cartagena">Cartagena
+          </label>
+        </div>
+        <div>
+          <label for="textartea">¿que te gusto mas de estas ciudades?</label >
+          <textarea name="textartea" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+          <input type="submit" value="enviar" id="submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
